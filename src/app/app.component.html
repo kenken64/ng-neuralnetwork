@@ -3,7 +3,7 @@
     <br>
   </div>
   <div>
-        Neural Network (D3)
+        Neural Network (Angular 6 + D3.js) by kenken64
   </div>
   <div>
       <br>
@@ -39,9 +39,28 @@
       [displayWith]="formatLabel"
       tickInterval="1"
       min="1"
-      max="4"
+      max="5"
       [(ngModel)]="hiddenlayer"
       (input)="onInputChangeHLayer($event)">
+    </mat-slider>
+  </div>
+  <div>
+      <br>
+  </div>
+  <div>
+    <mat-chip-list>
+        <mat-chip color="accent" selected>Hidden Layer Depth</mat-chip>
+    </mat-chip-list>  
+  </div>
+  <div>
+    <mat-slider
+      thumbLabel
+      [displayWith]="formatLabel"
+      tickInterval="10"
+      min="10"
+      max="50"
+      [(ngModel)]="hiddenDepth"
+      (input)="onInputChangeHLayerD($event)">
     </mat-slider>
   </div>
   <div>

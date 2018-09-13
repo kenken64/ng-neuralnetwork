@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
 
   inputlayer: number = 5;
   hiddenlayer: number = 1;
+  hiddenDepth: number = 0;
   outputlayer: number = 2;
   svg: any;
 
@@ -44,6 +45,17 @@ export class AppComponent implements OnInit {
   onInputChangeHLayer(event: any) {
     console.log("changing slider ..." + event.value);
     this.hiddenlayer = event.value;
+    this.drawNeuralNetwork();
+  }
+
+  onInputChangeHLayerD(event: any) {
+    console.log("changing slider ..." + event.value);
+    this.hiddenDepth = event.value;
+    this.hiddenLayersDepths = [];
+    for (let i: number = 0; i < +this.hiddenlayer; i++) {
+      this.hiddenLayersDepths.push(+this.hiddenDepth);
+    }
+    console.log(this.hiddenLayersDepths);
     this.drawNeuralNetwork();
   }
 
