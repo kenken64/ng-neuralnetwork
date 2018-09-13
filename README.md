@@ -1,5 +1,14 @@
 # NgNeuralnetwork
 
+```bash
+ng add @angular/material
+npm install @angular/flex-layout --save
+npm install d3 --save
+ng add @angular/pwa
+npm install --save-dev @types/d3
+npm install --save hammerjs
+```
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## Development server
