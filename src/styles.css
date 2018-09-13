@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+.node:hover {
+    stroke: #202125;
+    stroke-opacity: .6;
+    stroke-width: 4px;
+}
+
+.link {
+    stroke: #202125;
+    stroke-opacity: .6;
+}

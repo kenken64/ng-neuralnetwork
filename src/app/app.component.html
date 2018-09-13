@@ -1,0 +1,70 @@
+<div fxLayout="column" fxLayoutAlign="space-between center">
+  <div>
+    <br>
+  </div>
+  <div>
+        Neural Network (D3)
+  </div>
+  <div>
+      <br>
+  </div>
+  <div>
+    <mat-chip-list>
+        <mat-chip color="primary" selected>Input Layer Height</mat-chip>
+    </mat-chip-list>  
+  </div>
+  <div>
+    <br>
+    <mat-slider
+      thumbLabel
+      [displayWith]="formatLabel"
+      tickInterval="1"
+      min="5"
+      max="20"
+      [(ngModel)]="inputlayer"
+      (input)="onInputChangeILayer($event)" >
+    </mat-slider>
+  </div>
+  <div>
+      <br>
+  </div>
+  <div>
+    <mat-chip-list>
+        <mat-chip color="accent" selected>Hidden Layer Count</mat-chip>
+    </mat-chip-list>  
+  </div>
+  <div>
+    <mat-slider
+      thumbLabel
+      [displayWith]="formatLabel"
+      tickInterval="1"
+      min="1"
+      max="4"
+      [(ngModel)]="hiddenlayer"
+      (input)="onInputChangeHLayer($event)">
+    </mat-slider>
+  </div>
+  <div>
+      <br>
+  </div>
+  <div>
+    <mat-chip-list>
+        <mat-chip color="primary" selected>Output Layer Height</mat-chip>
+    </mat-chip-list>  
+  </div>
+  <div>
+    <mat-slider
+      thumbLabel
+      [displayWith]="formatLabel"
+      tickInterval="1"
+      min="2"
+      max="10"
+      [(ngModel)]="outputlayer"
+      (input)="onInputChangeOLayer($event)">
+    </mat-slider>
+  </div>
+</div>
+
+<div fxLayout="column" fxLayoutAlign="space-between center">
+  <div id="nn"></div>
+</div>
