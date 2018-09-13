@@ -1,5 +1,7 @@
 # NgNeuralnetwork
 
+<img src="./images/ann.gif"/>
+
 ```bash
 ng add @angular/material
 npm install @angular/flex-layout --save
